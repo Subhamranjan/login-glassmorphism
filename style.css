@@ -1,0 +1,261 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #f1f4f9, #dff1ff);
+}
+
+section .color{
+    position: absolute;
+    filter: blur(150px);
+}
+
+section .color:nth-child(1){
+    top: -10px;
+    width:1200px;
+    height:400px;
+    background: #87805E;
+}
+
+section .color:nth-child(2){
+    bottom: 50px;
+    left: 200px;
+    width:900px;
+    height:400px;
+    background: #EDDFB3;
+}
+
+section .color:nth-child(3){
+    bottom: 50px;
+    right: 200px;
+    width:800px;
+    height:300px;
+    background: #B09B71;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card-top-left {
+    width: 120px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 420px;
+    margin-bottom: 600px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    z-index: 2;
+    backdrop-filter: blur(5px);
+    animation: circle linear 5s infinite 1s;
+}
+
+@keyframes circle {
+    0% {
+        margin-bottom: 600px;
+    }
+    50%{
+        margin-bottom: 300px;
+    }    
+    100%{
+        margin-bottom: 600px;
+    }
+}
+
+
+form {
+    width: 300px;
+    height: 500px;
+}
+
+form>h1 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+.username,
+.password {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #000;
+    background-color: transparent;
+    border-radius: 25px;
+    margin: 10px;
+    outline: none;
+}
+
+::placeholder {
+    color: #000;
+}
+
+.main{
+    margin-left: 15px;
+}
+
+.forget-password-msg{
+    margin-left: 15px;
+    font-size: 10px;
+}
+
+.msg{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.sign {
+    margin-top: 20px;
+}
+
+.signin{
+        font-size: 15px;
+        padding: 12px;
+        margin-top: 20px;
+        margin: 10px;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        cursor: pointer;
+        color: #fff;
+        border-radius: 25px;
+        background-color: #000;
+        border: 1px solid #000;
+}
+
+.hr{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hr p{
+    color: #000;
+}
+
+.left-line{
+    margin-right: 200px;
+    width: 50px;
+    border: 1px solid #000;
+    background-color: #000;
+    position: absolute;
+}
+
+.right-line{
+    margin-left: 200px;
+    width: 50px;
+    border: 1px solid #000;
+    background-color: #000;
+    position: absolute;
+}
+
+.google{
+    font-size: 15px;
+    padding: 12px;
+    margin: 10px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+    color: #000;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 1px solid #000;
+}
+.google:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+
+.facebook{
+    font-size: 15px;
+    padding: 12px;
+    margin: 10px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+    color: #000;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 1px solid #000;
+}
+
+.facebook:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.signup--msg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.signup-msg {
+    font-size: 15px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.card-bottom-right {
+    width: 120px;
+    height: 100px;
+    margin-left: 420px;
+    margin-top: 600px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.20);
+    position: absolute;
+    z-index: 2;
+    backdrop-filter: blur(5px);
+    animation: square linear 5s infinite 1s;
+}
+
+@keyframes square{
+    0% {
+        margin-top: 600px;
+    }
+    50%{
+        margin-top: 300px;
+    }
+    100%{
+        margin-top: 600px;
+    }
+}
+
+.card-center {
+    width: 400px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
